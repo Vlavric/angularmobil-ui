@@ -39,23 +39,22 @@
             <form role="form" ng-submit='login()'>
                 <fieldset>
                     <legend>You are here!</legend>
-                    <div ng-hide="showLatlong">
-                        <div class="form-group has-success has-feedback">
-                            <label>Latitude</label>
-                            <input ng-model="map.center.latitude" class="form-control" >
-                        </div>
-
-                        <div class="form-group">
-                            <label>Longitude</label>
-                            <input ng-model="map.center.longitude" class="form-control">
-                        </div>
+                    <div class="form-group has-success has-feedback">
+                        <label>Email</label>
+                        <input type="email" ng-model="email" class="form-control" placeholder="Enter email">
                     </div>
+
                     <div class="form-group">
-                        <label>Sho longitude and latitude</label>
-                        <ui-switch ng-model='showLatLong'></ui-switch>
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Remember Me</label>
+                        <ui-switch ng-model='rememberMe'></ui-switch>
                     </div>
                 </fieldset>
-                <!--<hr>
+                <hr>
 
                 <button class="btn btn-primary btn-block">
                     Login
@@ -63,7 +62,7 @@
 
                 <div ui-content-for="navbarAction">
                     <a class='btn' ng-click='login()'>Login</a>
-                </div>-->
+                </div>
 
             </form>
         </div>
